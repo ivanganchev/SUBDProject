@@ -1,0 +1,15 @@
+<div class="inputAdd">
+    <form>
+        <select ng-model="phone.labelId">
+            <option ng-repeat="label in labels" value="{{label.id}}">{{label.labelName}}</option>
+        </select>
+        <input type="text" value="" placeholder="Model" ng-model="phone.model">  
+        <input type="text" value="" placeholder="Year" ng-model="phone.releaseDate">  
+        <input type="text" value="" placeholder="Price" ng-model="phone.price">  
+        <input type="text" value="" placeholder="RAM" ng-model="phone.ram">  
+        <input type="text" value="" placeholder="Internal storage" ng-model="phone.internalStorage">   
+        <input type="text" value="" placeholder="Screen resolution" ng-model="phone.screenResolution"> 
+        <input type="text" value="" placeholder="Battery capacity" ng-model="phone.batteryCapacity"> 
+    </form>
+        <button type="button" id="addB" ng-click = "add()">Add</button>
+</div>

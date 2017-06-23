@@ -1,0 +1,28 @@
+            <div id="label">
+                <ul class="phone-label">    
+                    <li ng-repeat="label in labels" ng-click="getModels(label.id)"><a class = "label">{{label.labelName}}</a></li>
+                </ul>
+            </div>
+            
+            <div id ="models">
+                <ul class="phone-label">    
+                    <li ng-repeat="model in models" ng-click="getDetails(model.labelId, model.id)"><a class = "label">{{model.modelName}}</a></li>
+                </ul>
+            </div>
+    
+
+        
+            <div id = "characteristics" ng-if="details">
+                   <img ng-src="{{details.imgLink}}" alt = "" class = "picture"> 
+                   <div class ="info">
+                       <div><span class = "column1">Label</span> <span class="colunm2">{{details.label}}</span></div>
+                       <div><span class = "column1">Model</span> <span class="colunm2" >{{details.model}}</span></div>
+                       <div><span class = "column1">Year</span> <span class = "colunm2" >{{details.releaseDate}}</span></div>
+                       <div><span class = "column1">Price</span> <span class="colunm2">{{details.price}}</span></div>
+                       <div><span class = "column1">RAM</span> <span class="colunm2" >{{details.ram}}</span></div>
+                       <div><span class = "column1">Internal Storage</span> <span class = "colunm2" >{{details.internalStorage}}</span></div>
+                       <div><span class = "column1">Screen Resolution</span> <span class="colunm2">{{details.screenResolution}}</span></div>
+                       <div><span class = "column1">Battery Capacity</span> <span class="colunm2" >{{details.batteryCapacity}}</span></div>
+                   </div>
+            
+            </div>

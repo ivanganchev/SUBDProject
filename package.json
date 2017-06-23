@@ -1,0 +1,16 @@
+{
+  "name": "tproject",
+  "version": "1.0.0",
+  "description": "Phone website",
+  "main": "index.js",
+  "dependencies": {
+    "angular-route": "^1.6.4",
+    "angular": "^1.6.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Ganchev",
+  "license": "ISC"
+}
